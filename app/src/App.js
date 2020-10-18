@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/profile/:name">
+            <Profile />
+          </Route>
+
         </Switch>
       </div>
     </BrowserRouter>
